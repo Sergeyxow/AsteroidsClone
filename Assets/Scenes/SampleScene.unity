@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 1072235247}
   - component: {fileID: 1072235250}
   m_Layer: 0
-  m_Name: TOREMOVE
+  m_Name: Spaceship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -266,7 +266,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 4fed5c4830b2f944f94a46452feba49f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -289,10 +289,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60174646a1cc44a68f393dd831949fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _drag: 0.1
-  _angularDrag: 0
-  _velocityLimit: {x: 0, y: 0}
-  _angularVelocityLimit: {x: 0, y: 0}
+  _speed: 3
+  _drag: 1
+  _velocityLimit: 0
+  _angularSpeed: 3
+  _angularDrag: 1
+  _angularVelocityLimit: 0
 --- !u!4 &1072235249
 Transform:
   m_ObjectHideFlags: 0
@@ -302,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 1072235246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
