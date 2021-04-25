@@ -2,7 +2,7 @@
 
 namespace DefaultNamespace
 {
-    public class Asteroid : MonoBehaviour
+    public class Fireable : MonoBehaviour
     {
         [SerializeField] private MoverBase _mover;
         public void SetMovementDirection(Vector2 direction)

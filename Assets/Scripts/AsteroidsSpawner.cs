@@ -7,7 +7,7 @@ namespace DefaultNamespace
 {
     public class AsteroidsSpawner : MonoBehaviour
     {
-        [SerializeField] private Asteroid _asteroidPrefab;
+        [SerializeField] private Fireable FireablePrefab;
         [SerializeField] private float _spawnRadius;
         [SerializeField] private float _spawnDelay;
 
@@ -30,7 +30,7 @@ namespace DefaultNamespace
             Vector2 spawnPoint = GetRandomDirection() * _spawnRadius;
             Vector2 destinationPoint = GetRandomDirection() * _spawnRadius;
 
-            Asteroid instance = Instantiate(_asteroidPrefab, spawnPoint, Quaternion.identity);
+            Fireable instance = Instantiate(FireablePrefab, spawnPoint, Quaternion.identity);
             instance.SetMovementDirection((destinationPoint - spawnPoint).normalized);
         }
 

@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed5b9d17872480e87661bb4aa9b0a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _asteroidPrefab: {fileID: 1404888268174713655, guid: e24cc64dd6e8ba6449d5d8e1dfce4794, type: 3}
+  FireablePrefab: {fileID: 1404888268174713655, guid: e24cc64dd6e8ba6449d5d8e1dfce4794, type: 3}
   _spawnRadius: 6
   _spawnDelay: 1
 --- !u!4 &582537736
@@ -303,9 +303,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2305976646764467715, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 7563833688029574104, guid: 82b16fce677c94249b614dfdddb10613, type: 3}
     - target: {fileID: 2305976646764467742, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
       propertyPath: m_Name
       value: Spaceship
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305976646764467742, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
