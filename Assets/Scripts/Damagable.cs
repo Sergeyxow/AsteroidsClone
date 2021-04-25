@@ -5,7 +5,7 @@ namespace DefaultNamespace
 {
     public class Damagable : MonoBehaviour
     {
-        private UnityEvent<float> OnDamageTaken;
+        public UnityEvent<float> OnDamageTaken;
 
         public void TakeDamage(float damage)
         {
