@@ -31,7 +31,7 @@ namespace DefaultNamespace
                 _angularVelocity += torque * (_angularSpeed * 100f);
         }
 
-        private void Update()
+        protected virtual void Update()
         {
             transform.position += _velocity * Time.deltaTime;
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles +  _angularVelocity * Time.deltaTime);

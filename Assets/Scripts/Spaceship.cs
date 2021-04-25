@@ -6,6 +6,7 @@ namespace DefaultNamespace
 {
     public class Spaceship : MonoBehaviour
     {
+        [Header("Movement")]
         [SerializeField] private MoverBase _mover;
         [SerializeField] private PlayerInput _playerInput;
         
@@ -55,5 +56,6 @@ namespace DefaultNamespace
                 bullet.SetMovementDirection(_shootPoint.up);
             }
         }
+
     }
 }
