@@ -8,9 +8,10 @@ namespace DefaultNamespace
         [SerializeField] private int _scorePerKill;
         public event Action<int> Killed;
 
-        public void Kill()
+        public void Kill(Damage damage)
         {
-            Killed?.Invoke(_scorePerKill);
+            int score = damage.Side == Damage.SenderSide.Player ? _scorePerKill : 0; 
+            Killed?.Invoke(score);
             Killed = null;
         }
     }
