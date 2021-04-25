@@ -57,5 +57,11 @@ namespace DefaultNamespace
             }
         }
 
+        public void Respawn()
+        {
+            transform.position = Vector3.zero;
+            transform.rotation = Quaternion.identity;
+        }
+
     }
 }

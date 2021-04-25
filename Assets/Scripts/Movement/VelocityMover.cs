@@ -31,6 +31,12 @@ namespace DefaultNamespace
                 _angularVelocity += torque * (_angularSpeed * 100f);
         }
 
+        public override void Stop()
+        {
+            _velocity = Vector3.zero;
+            _angularVelocity = Vector3.zero;
+        }
+
         protected virtual void Update()
         {
             transform.position += _velocity * Time.deltaTime;
