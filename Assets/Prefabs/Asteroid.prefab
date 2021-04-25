@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1404888268174713648}
-  - component: {fileID: 1404888268174713655}
+  - component: {fileID: 6436111322866663170}
   - component: {fileID: 1404888268174713654}
   - component: {fileID: 1404888268174713653}
   - component: {fileID: 5761207242602610548}
@@ -38,7 +38,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1404888268174713655
+--- !u!114 &6436111322866663170
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,10 +47,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1404888268174713659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 265e4448c9724e08ab230b81613f2434, type: 3}
+  m_Script: {fileID: 11500000, guid: 29a54f8bf21e4d41b24099fca43170d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _mover: {fileID: 1404888268174713654}
+  _scorePerKill: 30
 --- !u!114 &1404888268174713654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,6 +191,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3934508788251945594}
         m_TargetAssemblyTypeName: DefaultNamespace.DisableOnTrigger, Assembly-CSharp
         m_MethodName: Trigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6436111322866663170}
+        m_TargetAssemblyTypeName: DefaultNamespace.Asteroid, Assembly-CSharp
+        m_MethodName: Kill
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

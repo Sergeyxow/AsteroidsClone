@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 namespace DefaultNamespace
 {
     public class AsteroidsSpawner : MonoBehaviour
     {
-        [SerializeField] private Fireable FireablePrefab;
+        [SerializeField] private Asteroid FireablePrefab;
         [SerializeField] private float _spawnRadius;
         [SerializeField] private float _spawnDelay;
+
+        public UnityEvent<int> AsteroidDestroyed;
 
         private void Start()
         {
@@ -30,8 +33,9 @@ namespace DefaultNamespace
             Vector2 spawnPoint = GetRandomDirection() * _spawnRadius;
             Vector2 destinationPoint = GetRandomDirection() * _spawnRadius;
 
-            Fireable instance = Instantiate(FireablePrefab, spawnPoint, Quaternion.identity);
+            Asteroid instance = Instantiate(FireablePrefab, spawnPoint, Quaternion.identity);
             instance.SetMovementDirection((destinationPoint - spawnPoint).normalized);
+            instance.Killed += i => AsteroidDestroyed?.Invoke(i);
         }
 
         private Vector2 GetRandomDirection()

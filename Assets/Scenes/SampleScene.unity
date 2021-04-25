@@ -431,9 +431,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed5b9d17872480e87661bb4aa9b0a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireablePrefab: {fileID: 1404888268174713655, guid: e24cc64dd6e8ba6449d5d8e1dfce4794, type: 3}
+  FireablePrefab: {fileID: 6436111322866663170, guid: e24cc64dd6e8ba6449d5d8e1dfce4794, type: 3}
   _spawnRadius: 6
   _spawnDelay: 1
+  AsteroidDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &582537736
 Transform:
   m_ObjectHideFlags: 0
