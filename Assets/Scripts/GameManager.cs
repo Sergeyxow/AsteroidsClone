@@ -13,7 +13,7 @@ namespace DefaultNamespace
         
         public UnityEvent<int> ScoreUpdated;
         public UnityEvent<int> LivesUpdated;
-        public UnityEvent GameIsOver;
+        public UnityEvent<int> GameIsOver;
 
         private void Start()
         {
@@ -34,7 +34,7 @@ namespace DefaultNamespace
             
             if (_lives <= 0)
             {
-                GameIsOver?.Invoke();
+                GameIsOver?.Invoke(_score);
                 Debug.Log("YOU LOSE!");
                 return;
             }
