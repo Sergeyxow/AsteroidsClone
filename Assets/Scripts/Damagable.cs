@@ -7,7 +7,7 @@ namespace DefaultNamespace
     {
         private UnityEvent<float> OnDamageTaken;
 
-        private void TakeDamage(float damage)
+        public void TakeDamage(float damage)
         {
             OnDamageTaken?.Invoke(damage);
         }
