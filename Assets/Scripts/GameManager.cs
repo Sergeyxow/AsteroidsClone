@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace DefaultNamespace
+namespace Asteroids
 {
     public class GameManager : MonoBehaviour
     {

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace DefaultNamespace.UI
+namespace Asteroids.UI
 {
     public class LoseScreen : MonoBehaviour
     {

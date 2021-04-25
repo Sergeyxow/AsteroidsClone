@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DefaultNamespace
+namespace Asteroids
 {
     [Serializable]
     public class Damage

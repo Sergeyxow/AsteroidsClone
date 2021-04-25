@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace DefaultNamespace
+namespace Asteroids
 {
     public class Spaceship : MonoBehaviour
     {

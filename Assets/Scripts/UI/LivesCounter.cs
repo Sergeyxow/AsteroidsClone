@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace DefaultNamespace.UI
+namespace Asteroids.UI
 {
     public class LivesCounter : MonoBehaviour
     {

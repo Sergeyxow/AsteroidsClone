@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DefaultNamespace
+namespace Asteroids
 {
     public class DisableOnTrigger : MonoBehaviour
     {
