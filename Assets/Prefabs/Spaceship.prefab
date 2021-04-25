@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2305976646764467713}
   - component: {fileID: 2305976646764467715}
-  - component: {fileID: 2305976646764467712}
   - component: {fileID: 2305976646764467743}
   - component: {fileID: 2305976646764467714}
   - component: {fileID: 8312208326629617934}
   - component: {fileID: 5534319196960171354}
+  - component: {fileID: 517503053}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -49,29 +49,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a319dcff52a406f86a4905e855d04b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mover: {fileID: 2305976646764467712}
+  _mover: {fileID: 517503053}
   _playerInput: {fileID: 2305976646764467714}
-  _bulletPrefab: {fileID: 0}
+  _bulletPrefab: {fileID: 7563833688029574104, guid: 82b16fce677c94249b614dfdddb10613, type: 3}
   _shootPoint: {fileID: 2384522824873615710}
   _bulletsPerSecond: 5
---- !u!114 &2305976646764467712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2305976646764467742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60174646a1cc44a68f393dd831949fff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 3
-  _drag: 1
-  _velocityLimit: 0
-  _angularSpeed: 3
-  _angularDrag: 1
-  _angularVelocityLimit: 0
 --- !u!212 &2305976646764467743
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -216,6 +198,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &517503053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305976646764467742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d0023e478348c6a3800db9a80f3700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 3
+  _drag: 1
+  _velocityLimit: 0
+  _angularSpeed: 3
+  _angularDrag: 1
+  _angularVelocityLimit: 0
+  _squareHalfSide: 5
 --- !u!1 &8697407174773097481
 GameObject:
   m_ObjectHideFlags: 0

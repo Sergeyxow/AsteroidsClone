@@ -185,30 +185,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4909908039720760591, guid: a9bc1171ae72d3142a2bde265559dc65, type: 3}
   m_PrefabInstance: {fileID: 61874025}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &517503052 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2305976646764467742, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
-  m_PrefabInstance: {fileID: 2305976646405395696}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &517503053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517503052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d0023e478348c6a3800db9a80f3700, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 3
-  _drag: 1
-  _velocityLimit: 0
-  _angularSpeed: 3
-  _angularDrag: 1
-  _angularVelocityLimit: 0
-  _squareHalfSide: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,28 +528,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2305976646764467715, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
-      propertyPath: _mover
-      value: 
-      objectReference: {fileID: 517503053}
-    - target: {fileID: 2305976646764467715, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
-      propertyPath: _bulletPrefab
-      value: 
-      objectReference: {fileID: 7563833688029574104, guid: 82b16fce677c94249b614dfdddb10613, type: 3}
-    - target: {fileID: 2305976646764467715, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
-      propertyPath: _squareHalfSide
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2305976646764467742, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
       propertyPath: m_Name
       value: Spaceship
       objectReference: {fileID: 0}
-    - target: {fileID: 2305976646764467742, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2305976646764467712, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8fa65487a9d2544a63bb13e19c7ff9, type: 3}
 --- !u!1001 &4909908040115386982
 PrefabInstance:
